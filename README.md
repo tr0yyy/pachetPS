@@ -7,7 +7,7 @@ Proiect Laborator Probabilitati si Statistica - CTI Sem 2 2020/21
 normalizare k. Ȋn cazul ȋn care o asemenea constantă nu există, afișarea unui mesaj 
 corespunzător către utilizator.
 2. Ulmeanu Cristian - Verificarea dacă o funcție introdusă de utilizator este densitate de probabilitate. 
-3. Dyart Mert Daniel - Crearea unui obiect de tip variabilă aleatoare continuă pornind de la o densitate de 
+3. Diyar Mert Daniel - Crearea unui obiect de tip variabilă aleatoare continuă pornind de la o densitate de 
 probabilitate introdusă de utilizator. Funcția trebuie să aibă opțiunea pentru variabile 
 aleatoare unidimensionale și respectiv bidimensionale.
 4. Anghelea Bogdan Gabriel - Reprezentarea grafică a densității și a funcției de repartiție pentru diferite valori ale 
@@ -26,10 +26,10 @@ repartiție(cu precizarea sursei informației!). Relevant aici ar fi să preciza
 folosită ȋn mod uzual acea repartiție, semnificația parametrilor, media, dispersia etc.
 9. Nicoi Alexandru - Generarea a n valori(unde n este precizat de utilizator!) dintr-o repartiție de variabile 
 aleatoare continue( solicitați material suport pentru partea de simulare).
-10. Dyart Mert Daniel - Calculul covarianței și coeficientului de corelație pentru două variabile aleatoare 
+10. Diyar Mert Daniel - Calculul covarianței și coeficientului de corelație pentru două variabile aleatoare 
 continue(Atenție:Trebuie să folosiți densitatea comună a celor două variabile 
 aleatoare!)
-11. Dyart Mert Daniel - Pornind de la densitatea comună a două variabile aleatoare continue, construirea 
+11. Diyar Mert Daniel - Pornind de la densitatea comună a două variabile aleatoare continue, construirea 
 densităților marginale și a densităților condiționate.
 12. Ulmeanu Cristian - Construirea sumei și diferenței a două variabile aleatoare continue 
 independente(folosiți formula de convoluție)
