@@ -3,7 +3,7 @@ Proiect Laborator Probabilitati si Statistica - CTI Sem 2 2020/21
 
 ## Distribuirea etapelor de lucru
 
-1. Nicoi Alexandru - Fiind dată o funcție f , introdusă de utilizator, determinarea unei constante de 
+1. **Nicoi Alexandru **- Fiind dată o funcție f , introdusă de utilizator, determinarea unei constante de 
 normalizare k. Ȋn cazul ȋn care o asemenea constantă nu există, afișarea unui mesaj 
 corespunzător către utilizator.
 2. Ulmeanu Cristian - Verificarea dacă o funcție introdusă de utilizator este densitate de probabilitate. 
