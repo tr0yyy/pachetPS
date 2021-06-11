@@ -51,7 +51,21 @@ momentInitial<-funtion(f,ordin){
       return(produs);
     },-Inf,Inf)$value);
   }, eroare = function(e){
-    warning(c("Nu se poate calcula media"));
+    warning(c("Nu se poate calcula momentul initial"));
     return(0);
   });
+}
+
+patruMomente <- function(f)
+{
+  print('Primele 4 momente initiale sunt:')
+  print(moment_initial(f, 1))
+  print(moment_initial(f, 2))
+  print(moment_initial(f, 3))
+  print(moment_initial(f, 4))
+  print('Primele 4 momente centrate sunt:')
+  print(moment_centrat(f, 1))
+  print(moment_centrat(f, 2))
+  print(moment_centrat(f, 3))
+  print(moment_centrat(f, 4))
 }
