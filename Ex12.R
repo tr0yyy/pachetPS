@@ -4,14 +4,14 @@
 #a(n)=Integrala(x(t)*y(n-t))
 
 
-#Z=X+Y unde X si Y sunt variabile aleatorii => Y=Z-X
+#Calcularea sumei folosind functia de convolutie Z=X+Y unde X si Y sunt variabile aleatorii => Y=Z-X
 suma_convolutie <- function (f,g){function(z){
   integrala_con_sum <- function(x){g(z-x)*f(x)}
   sum <- integrate(Vectorize(integrala_con_sum),-Inf,Inf) $ value
   return(sum)
 }}
 
-#Z=X-Y unde X si Y sunt variabile aleatorii => Y=X-Z
+#Calcularea diferentei folosind functia de convolutie Z=X-Y unde X si Y sunt variabile aleatorii => Y=X-Z
 diferenta_convolutie <- function (f,g){function(z){
   integrala_con_dif <- function(x){g(x-z)*f(x)}
   dif <- integrate(Vectorize(integrala_con_dif),-Inf,Inf) $ value
