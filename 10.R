@@ -6,7 +6,7 @@ media<-function(f,fst=-Inf,fdr=Inf){
       produs<-x*f(x);
       return(produs);
     },fst,fdr)$value);
-  }, eroare = function(e){
+  }, error = function(e){
     print("Nu se poate calcula media");
     return(0);
   });
@@ -23,7 +23,7 @@ dispersia<-function(f,fst=-Inf,fdr=Inf){
       produs<-((x-medie)^2)*f(x);
       return(produs);
     },fst,fdr)$value);
-  }, eroare = function(e){
+  }, error = function(e){
     print("Nu se poate calcula dispersia");
     return(0);
   });
@@ -37,7 +37,7 @@ densitate_marginalaX <- function(f,a,b,c =-Inf,d = Inf)
     {
       if(a>b) 0 #se compara capetele intervalului pentru a nu utiliza un interval imposibil
       else function(x) {integrate((function(y) {f(x, y)}), a, b)$value} #folosim formula de calcul din teorema
-    }, eroare = function(e){
+    }, error = function(e){
       print("Functia de densitate comuna este incorecta!");
     }
   )
@@ -50,7 +50,7 @@ densitate_marginalaY <- function(f,a,b,c =-Inf,d = Inf)
     {
       if(a>b) 0 #se compara capetele intervalului pentru a nu utiliza un interval imposibil
       else function(y) {integrate((function(x) {f(x, y)}), a, b)$value} #folosim formula de calcul din teorema
-    }, eroare = function(e){
+    }, error = function(e){
       print("Functia de densitate comuna este incorecta!");
     }
   )
@@ -81,3 +81,5 @@ f<-function(x,y){
 }
 
 covarianta_corelatia(f, 0, 1, 0, 1)
+#[1] 0.125
+#[1] 1.5
