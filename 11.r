@@ -13,8 +13,8 @@ densitate_marginalaX <- function(f,a,b,c =-Inf,d = Inf)
   b <- min(b,d) #se compara minimul intre limitele superioare dintre intervalul variabilei opuse si cel conditional
   tryCatch(
     {
-    if(a>b) 0 #se compara capetele intervalului pentru a nu utiliza un interval imposibil
-    else function(x) (integrate(Vectorize(function(y) (f(x, y))), a, b)$value) #folosim formula de calcul din teorema
+      if(a>b) 0 #se compara capetele intervalului pentru a nu utiliza un interval imposibil
+      else function(x) {integrate((function(y) {f(x, y)}), a, b)$value} #folosim formula de calcul din teorema
     }, eroare = function(e){
       print("Functia de densitate comuna este incorecta!");
     }
@@ -27,7 +27,7 @@ densitate_marginalaY <- function(f,a,b,c =-Inf,d = Inf)
   tryCatch(
     {
       if(a>b) 0 #se compara capetele intervalului pentru a nu utiliza un interval imposibil
-      else function(y) (integrate(Vectorize(function(x) (f(x, y))), a, b)$value) #folosim formula de calcul din teorema
+      else function(y) {integrate((function(x) {f(x, y)}), a, b)$value} #folosim formula de calcul din teorema
     }, eroare = function(e){
       print("Functia de densitate comuna este incorecta!");
     }
