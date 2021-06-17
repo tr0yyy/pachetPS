@@ -22,8 +22,8 @@ calcul_dispersie <- function(g,functie_dens_prob,lower,upper){
 
 #Testare
 # 
-# f1 <- function(x)(x^2)
-# f2 <- function(x) (1 * exp(1)^(-1 * x))
+# f1 <- function(x)(2*(x^3))
+# f2 <- function(x)(exp(1)^(-2*x))
 # calcul_medie(f1,f2,0,Inf)
 # calcul_dispersie(f1,f2,0,Inf)
 

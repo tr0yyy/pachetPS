@@ -24,14 +24,24 @@ densitate <- function(f,lower,upper,pas){
 }
 
 ##TESTARE
-# f <- function(x){
-# if (x > 0 && x < 2){
-#      3/8 * (4*x-2*x^2)
+# #Functie ce nu indeplineste conditiile
+# f1 <- function(x){
+# if (x > 0 && x < 4){
+#     3/5 * (2*x-6*x^2)
+#  }else{
+#     0
+#  }
+# }
+# #Functie ce indeplineste conditiile
+# f2 <- function(x){
+#   if (x > 0 && x < 4){
+#     3/20*(x^2-2*x+1)
 #   }else{
-#      0
+#     0
 #   }
 # }
 # test <- integrate(Vectorize(f),-Inf,Inf) $ value
 # print(test)
 # 
-# densitate(f,-10000,10000,1)
+# densitate(f1,-10000,10000,1)
+# densitate(f2,-10000,10000,0.01)

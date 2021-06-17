@@ -19,8 +19,8 @@ diferenta_convolutie <- function (f,g){function(z){
 }}
 
 ##Testare
-# f <- function(x)(dnorm(x,mean=1))
-# g <- function(x) (dnorm(x,mean=2))
+# f <- function(x)(dnorm(x))
+# g <- function(x) (dnorm(x,mean=1))
 # s <- Vectorize(suma_convolutie(f,g))
 # d <- Vectorize(diferenta_convolutie(f,g))
 # 
