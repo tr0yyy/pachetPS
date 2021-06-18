@@ -8,7 +8,7 @@
 
 #Calculare medie
 calcul_medie<- function(g,functie_dens_prob,lower,upper){
-  integrala_medie <- function(x){g(x)*functie_dens_prob(x)} 
+  integrala_medie <- function(x){g(x)*functie_dens_prob(x)}
   medie <- integrate(Vectorize(integrala_medie),lower,upper) $ value
   return(medie)
 }
@@ -21,7 +21,7 @@ calcul_dispersie <- function(g,functie_dens_prob,lower,upper){
 }
 
 #Testare
-# 
+#
 # f1 <- function(x)(2*(x^3))
 # f2 <- function(x)(exp(1)^(-2*x))
 # calcul_medie(f1,f2,0,Inf)

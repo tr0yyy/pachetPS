@@ -12,14 +12,17 @@ densitate <- function(f,lower,upper,pas){
       i = integrate(Vectorize(f),-Inf,Inf) $ value
       if (round(i)==1){
         print("Functia este densitate de probabilitate.")
+        return("TRUE")
       }
       else{
         print("Functia nu este densitate de probabilitate.")
+        return("FALSE")
       }
     }
   }
   else{
     print("Functia este negativa pe intervalul ales.")
+    return("FALSE")
   }
 }
 
@@ -42,6 +45,6 @@ densitate <- function(f,lower,upper,pas){
 # }
 # test <- integrate(Vectorize(f),-Inf,Inf) $ value
 # print(test)
-# 
+#
 # densitate(f1,-10000,10000,1)
 # densitate(f2,-10000,10000,0.01)
