@@ -27,8 +27,8 @@ g <- function(x) (dnorm(x,mean=1))
 s <- Vectorize(suma_convolutie(f,g))
 d <- Vectorize(diferenta_convolutie(f,g))
 
-plot(f,from=-5,to=6,type="l",col ="magenta")
-plot(g,from=-5,to=6,type="l",col ="magenta")
-plot(s,from=-5,to=6,type="l",col ="magenta")
-plot(d,from=-5,to=6,type="l",col ="magenta")
+plot(f,from=-5,to=6,main="Functie densitate de probabilitate v.a.c 1.",type="l",col ="magenta")
+plot(g,from=-5,to=6,main="Functie densitate de probabilitate v.a.c 2.",type="l",col ="magenta")
+plot(s,from=-5,to=6,main="Graficul sumei.",type="l",col ="magenta")
+plot(d,from=-5,to=6,main="Graficul diferentei.",type="l",col ="magenta")
 }
