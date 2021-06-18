@@ -70,13 +70,13 @@ patruMomente <- function(f)
   print(momentCentrat(f, 4))
 }
 
-f1 <- function(x){  
-  if(x > 0 && x < 20)
-    return(1/20)
-  else
-    return(0)
-}
-patruMomente(f1)
+# f1 <- function(x){
+#   if(x > 0 && x < 20)
+#     return(1/20)
+#   else
+#     return(0)
+# }
+# patruMomente(f1)
 #[1] "Primele 4 momente initiale sunt:"
 #[1] 5.625
 #[1] 56.25

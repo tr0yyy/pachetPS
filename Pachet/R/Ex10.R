@@ -29,7 +29,7 @@ dispersia<-function(f,fst=-Inf,fdr=Inf){
   });
 }
 
-densitate_marginalaX <- function(f,a,b,c =-Inf,d = Inf) 
+densitate_marginalaX <- function(f,a,b,c =-Inf,d = Inf)
 {
   a <- max(a,c) #se compara maximul intre limitele inferioare dintre intervalul variabilei opuse si cel conditional
   b <- min(b,d) #se compara minimul intre limitele superioare dintre intervalul variabilei opuse si cel conditional
@@ -42,7 +42,7 @@ densitate_marginalaX <- function(f,a,b,c =-Inf,d = Inf)
     }
   )
 }
-densitate_marginalaY <- function(f,a,b,c =-Inf,d = Inf) 
+densitate_marginalaY <- function(f,a,b,c =-Inf,d = Inf)
 {
   a <- max(a,c) #se compara maximul intre limitele inferioare dintre intervalul variabilei opuse si cel conditional
   b <- min(b,d) #se compara minimul intre limitele superioare dintre intervalul variabilei opuse si cel conditional
@@ -59,27 +59,27 @@ densitate_marginalaY <- function(f,a,b,c =-Inf,d = Inf)
 covarianta_corelatia<-function(f, xst, xdr, yst, ydr){
   fx = densitate_marginalaX(f, xst, xdr)
   fy = densitate_marginalaY(f, yst, ydr)
-  
+
   medieX = media(fx, xst, xdr)
   medieY = media(fx, yst, ydr)
-  
+
   functie<-function(x,y){return(x*y*f(x,y))}
 
   cov = integral2(functie, xst, xdr, yst, ydr)$Q - (medieX*medieY)
-  
+
   dispersieX = dispersia(fx, xst, xdr)
   dispersieY = dispersia(fy, yst, ydr)
-  
+
   cor = cov / (sqrt(dispersieX)*sqrt(dispersieY))
-  
+
   print(cov)
   print(cor)
 }
 
-f<-function(x,y){
-  return(3/2*(x^2+y^2))
-}
-
-covarianta_corelatia(f, 0, 1, 0, 1)
-#[1] 0.125
-#[1] 1.5
+# f<-function(x,y){
+#   return(3/2*(x^2+y^2))
+# }
+#
+# covarianta_corelatia(f, 0, 1, 0, 1)
+# #[1] 0.125
+# #[1] 1.5
